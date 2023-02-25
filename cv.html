@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        *{
+        box-sizing:border-box;
+        }
+.container:hover .div1{
+visibility:visible;}
+.div1{
+float:left;visibility:hidden;
+}
+.info{
+color:red
+}
+.kutu{
+background-color:blue;
+border-radius:20 px;
+animation:hareket 5s infinite linear;
+}
+@keyframes hareket{
+from{width:0;
+
+}
+to{width:100%;}
+}
+    </style>
+</head>
+<body style="background-color:#7FFFD4;">
+	
+		<header style="overflow:auto; padding:10px;background-color:#F0F8FF; ">
+    			<div style="float:left;">
+				<h1 id="baslik">Mehmet Ali SÜRÜCÜ</h1>
+				<span><i class="fa-solid fa-phone"></i>+90 507 446 43 15 |
+<i class="fa-solid fa-square-envelope"></i> tekmas83@gmail.com |<i class="fa-brands fa-github"></i> github.com/tekmas </span>
+<div class="kutu">%0</div>
+    			</div>
+        		<img style="float:right;border-radius:50%;" src="Resim1.jpg" >
+
+    		</header>
+		<section style="overflow:auto;display:inline-block;margin-top:8px;background-color:#F0F8FF;">
+			<div style="float:left; width:65%;">
+				<h2>Hakkımda</h2>
+				<span >Yazılım dünyasına; gittiğim Grafik ve Animasyon Tabanlı Web Sayfası Hazırlama kursu ile merak duymaya başladım. İnternetten web tasarımıyla ilgili pek çok video dinleyerek ve online kurslara katılarak kendimi geliştirdim. 
+					Tech pro Education sayesinde java ve software testing ile tanıştım. Btk akademi, patica.dev, youtube ve Udemyden aldığım kurslarla ve intellij idea’da yaptığım projelerle kendimi Automation tester olma yolunda geliştiriyorum. 
+				</span>
+				<div class="container" id="kutu">
+					<div class="div1">2008
+					</div>
+					<div style="float:right;">Abant İzzet Baysal Üniversitesi<br>Bolu<br>Orman Endüstrisi Mühendisliği	
+					</div>
+
+				</div>
+<form name="formAdi" method="post" action=""><input type="text" name="isim"><input type="text" id="yas" value="ali"></form>
+			</div>
+			<div style="float:right;width:35%;">ççççççççççççççççççççççççççççççççççççççççççççççç
+			<a href="#"id="yazi">ali</a>	
+			</div>
+<ul>
+<li>ali</li>
+<li>hasan</li>
+<li>veli</li>
+</ul>
+<script>
+let divim=document.querySelector("#kutu")
+divim.classList.add("title","info")
+console.log(divim.classList)
+//let divDom=document.querySelector("div.container")
+//let newDiv=document.createElement('div')
+//newDiv.innerHTML="yeni div"
+//divDom.append(newDiv)
+let divDom=document.querySelector("ul")
+let newDiv=document.createElement('li')
+newDiv.innerHTML="yeni div"//ilk satırda yeni satır oluşturur
+divDom.prepend(newDiv)
+console.log("meraba")
+alert("merhaba")
+let isim="1ali"
+console.log(isim,typeof (isim))
+isim+=" 12"
+console.log(isim)
+isim=parseInt(isim)
+console.log(isim)
+//document.getElementbyId('yas').value = '25';
+//let link=document.getElementById('yazi')
+//console.log(link.innerHTML)
+let link=document.querySelector("#yazi")
+console.log(link.innerHTML+=" veli")
+const num="12px"
+//num=15 2.kez atamaya izin vermez
+console.log(num)
+let name=prompt("adınız :")
+console.log(name)
+</script>
+		</section>
+    	
+</body>
+</html>
